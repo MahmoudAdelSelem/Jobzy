@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport"  content="width=device-width ,inital scale=1"/>
     <title>@Page.Title</title>
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
     <link href="~/Content/Style.css" rel="stylesheet" />
@@ -58,7 +59,7 @@
                     <li>
                         <a href="#">
                             <i class="glyphicon glyphicon-lock">  </i>
-                            تسجيل
+                            انشاء
                         </a>
                     </li>
                 </ul>
@@ -68,7 +69,50 @@
     @RenderBody()
 
     <!-- Footer-->
+<footer class="navbar navbar-fixed-bottom myfooter">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>
+                    <i class="glyphicon glyphicon-info-sign">  </i>
+                    من نحن ؟
+                </h3>
+                <p class="who">
+                    نحن موقع توظيف عربي
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h3>
+                    <i class="glyphicon glyphicon-link">  </i>
+                    روابط هامه
+                </h3>
+                <ul>
+                    <li><a href="#"> وظائف للقطاع العام</a></li>
+                    <li><a href="#">  وظائف للقطاع الخاص</a></li>
+                    <li><a href="#">وظائف خارج البلاد </a> </li>
+                    <li><a href="#"> وظائف اخري</a>  </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h3>
+                    <i class="glyphicon glyphicon-envelope">  </i>
+                    تواصل معنا
+                </h3>
+                <ul>
+                    <li><a href="#"> صفحتنا علي الفيس بوك</a></li>
+                    <li><a href="#">تابعنا علي تويتر </a> </li>
+                    <li><a href="#">شاهدنا علي اليوتيوب </a>   </li>
+                    <li><a href="#"> أترك لنا رساله</a>    </li>
+                </ul>
+            </div>
 
+        </div>
+
+    </div>
+    <div class="subfooter">
+        <span> جميع الحقوق محفوظه لموقع التوظيف </span>
+    </div>
+</footer>
     <script src="~/Scripts/jquery.js"></script>
     <script src="~/Scripts/bootstrap.min.js"></script>
 </body>
