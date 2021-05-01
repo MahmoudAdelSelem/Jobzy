@@ -102,6 +102,11 @@
     <Content Include="Content\font\fontawesome-webfont.svg" />
     <Content Include="Content\font\glyphicons-halflings-regular.svg" />
     <Content Include="Content\font\index.html" />
+    <Content Include="fonts\font-awesome.css" />
+    <Content Include="fonts\font-awesome.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\index.html" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery.js" />
@@ -109,6 +114,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -146,8 +152,39 @@
     <Content Include="Content\font\TanseekModernProArabic2.woff" />
     <Content Include="Content\font\TanseekModernProArabic3.ttf" />
     <Content Include="Content\font\trado.ttf" />
+    <Content Include="fonts\DroidKufi-Regular.ttf" />
+    <Content Include="fonts\DroidNaskh-Bold.ttf" />
+    <Content Include="fonts\DroidNaskh-Regular.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\GE_SS_Two_Bold.eot" />
+    <Content Include="fonts\GE_SS_Two_Bold.otf" />
+    <Content Include="fonts\GE_SS_Two_Bold.woff" />
+    <Content Include="fonts\GE_SS_Two_Light.eot" />
+    <Content Include="fonts\GE_SS_Two_Light.otf" />
+    <Content Include="fonts\GE_SS_Two_Light.woff" />
+    <Content Include="fonts\GE_SS_Two_Medium.eot" />
+    <Content Include="fonts\GE_SS_Two_Medium.otf" />
+    <Content Include="fonts\GE_SS_Two_Medium.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\HelveticaNeueW23-Reg.ttf" />
+    <Content Include="fonts\iconic_stroke.eot" />
+    <Content Include="fonts\TanseekModernProArabic-Bold1.eot" />
+    <Content Include="fonts\TanseekModernProArabic-Bold2.woff" />
+    <Content Include="fonts\TanseekModernProArabic-Bold3.ttf" />
+    <Content Include="fonts\TanseekModernProArabic1.eot" />
+    <Content Include="fonts\TanseekModernProArabic2.woff" />
+    <Content Include="fonts\TanseekModernProArabic3.ttf" />
+    <Content Include="fonts\trado.ttf" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\_mylayout.cshtml" />
+    <Content Include="Views\Test\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -157,7 +194,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
