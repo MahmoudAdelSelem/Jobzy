@@ -32,5 +32,7 @@ namespace WebApplication1.Models
         }
 
         public System.Data.Entity.DbSet<Jobzy.Models.Category> Categories { get; set; }
+
+        public System.Data.Entity.DbSet<Jobzy.Models.Job> Jobs { get; set; }
     }
 }

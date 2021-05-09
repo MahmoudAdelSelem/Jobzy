@@ -16,5 +16,7 @@ namespace Jobzy.Models
         [Required]
         [Display(Name ="وصف النوع")]
         public string categoryDescription { get; set; }
+
+        public  ICollection<Job> Jobs { get; set; }
     }
 }
