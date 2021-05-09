@@ -139,6 +139,7 @@ namespace WebApplication1.Controllers
         [AllowAnonymous]
         public ActionResult Register()
         {
+            ViewBag.userType = new SelectList(new[] { "ناشر", "باحث" });
             return View();
         }
 
@@ -149,9 +150,11 @@ namespace WebApplication1.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Register(RegisterViewModel model)
         {
+
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                ViewBag.userType = new SelectList(new[] { "ناشر", "باحث" });
+                var user = new ApplicationUser { UserName = model.userName, Email = model.Email ,userType=model.userType};
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {

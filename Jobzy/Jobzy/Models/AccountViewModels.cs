@@ -65,18 +65,24 @@ namespace WebApplication1.Models
     public class RegisterViewModel
     {
         [Required]
+        [Display(Name = "اسم المستخدم")]
+        public string userName { get; set; }
+        [Required]
+        [Display(Name = " نوع الحساب")]
+        public string userType { get; set; }
+        [Required]
         [EmailAddress]
-        [Display(Name = "Email")]
+        [Display(Name = "البريد الألكتروني")]
         public string Email { get; set; }
 
         [Required]
         [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
         [DataType(DataType.Password)]
-        [Display(Name = "Password")]
+        [Display(Name = "كلمه السر")]
         public string Password { get; set; }
 
         [DataType(DataType.Password)]
-        [Display(Name = "Confirm password")]
+        [Display(Name = "تأكيد كلمه السر")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
     }
