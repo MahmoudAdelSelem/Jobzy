@@ -1,14 +1,14 @@
 ﻿@model IEnumerable<Jobzy.Models.Category>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "أنواع الوظائف";
     Layout = "~/Views/Shared/_mylayout.cshtml";
 }
 
-<h2>Index</h2>
+<h2>قائمه انواع الوظائف</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("انشاء نوع جديد", "Create")
 </p>
 <table class="table">
     <tr>
@@ -30,9 +30,9 @@
             @Html.DisplayFor(modelItem => item.categoryDescription)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+            @Html.ActionLink("تعديل", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("تفاصيل", "Details", new { id=item.Id }) |
+            @Html.ActionLink("حذف", "Delete", new { id=item.Id })
         </td>
     </tr>
 }
